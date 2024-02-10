@@ -101,13 +101,14 @@ sub homepage {
     my $name = shift;
     my $url  = shift;
 
+    return qq[<b>$name</b>];
+
+    # XXX
     if ( !$url ) {
         return qq[<b>$name</b>];
     }
     else {
-        return qq[<b>$name</b>];
-
-        #return qq[<b><a target='_new' href='$url'>$name</a></b>];
+        return qq[<b><a target='_new' href='$url'>$name</a></b>];
     }
 }
 
