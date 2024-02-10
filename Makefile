@@ -1,10 +1,19 @@
 # Copyright (c) 2024-2024 Wolfram Schneider, https://bbbike.org
 
 all: help
+SCRIPT= ./bin/geojsonp.pl
 
 update:
-	./bin/geojsonp.pl
+	${SCRIPT}
+
+perlcheck:
+	perl -T -cw ${SCRIPT}
+
+perltidy: perlcheck
+	perltidy -b ${SCRIPT}
+
 
 help:
-	@echo "make update"
+	@echo "make -s update"
+	@echo "make perltidy"
 
