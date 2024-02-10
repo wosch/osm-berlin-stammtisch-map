@@ -45,8 +45,9 @@ sub parse_csv {
         }
     );
 
-    open my $fh, "<", $file or die "$file: $!";
-    binmode( $fh, ":raw" );
+    open my $fh, "<", $file or die "$file: $!"; binmode( $fh, ":raw" );
+    #open my $fh, "<:encoding(utf8)", $file or die "$file: $!";
+
 
     my @rows = ();
     while ( my $row = $csv->getline($fh) ) {
@@ -59,9 +60,6 @@ sub parse_csv {
 
 sub name_norm {
     my $name = shift;
-
-    # fix wrong names in Wiki
-    $name =~ s/Eberswalde, Alte Post/Alte Post Eberswalde/;
 
     # lowercase, commas, etc.
     $name = lc($name);
@@ -106,7 +104,8 @@ sub homepage {
         return qq[<b>$name</b>];
     }
     else {
-        return qq[<b><a href='$url'>$name</a></b>];
+        return qq[<b>$name</b>];
+        #return qq[<b><a target='_new' href='$url'>$name</a></b>];
     }
 }
 
@@ -212,11 +211,21 @@ sub print_geojson {
     print "geoJsonResponse(\n", $data, ");\n";
 }
 
+sub check_descriptions {
+  my $location = shift;
+  my $description = shift;
+
+  foreach my $l (sort keys %$location) {
+    warn "Missing: $l\n" if !exists $description->{$l};
+  }
+}
+
 #############################################################################
 # main
 #
-binmode( \*STDOUT, ":raw" );
-binmode( \*STDERR, ":raw" );
+binmode( \*STDIN, ":utf8" );
+binmode( \*STDOUT, ":utf8" );
+binmode( \*STDERR, ":utf8" );
 
 GetOptions(
     "debug=i" => \$debug,
@@ -237,6 +246,7 @@ my $geojson_obj = &geojson_obj( $location, $description );
 if ($debug >= 1) {
   warn "Found locations: ", scalar(keys %$location), " number of meetings: ", scalar(@$stammtisch), "\n";
   warn "Found descriptions ", scalar(keys %$description), "\n";
+  &check_descriptions($location, $description);
 }
 
 #warn Dumper($location);
