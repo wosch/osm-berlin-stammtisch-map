@@ -441,14 +441,12 @@ function doLeaflet() {
     ];
 
     var baseMapDefs = [
-	 {label:"BBBike",        layer:bbbikeTileLayer,       abbrev:'B',  inControl:true  }
-	,{label:"BBBike (dull)", layer:bbbike04TileLayer,     abbrev:'B04',inControl:false }
-	,{label:"OSM",           layer:osmTileLayer,          abbrev:'O',  inControl:true  }
-	,{label:"OSM (dull)",    layer:osm04TileLayer,        abbrev:'O04',inControl:true  }
+	 {label:"OSM",           layer:osmTileLayer,          abbrev:'O',  inControl:true  }
+	,{label:"BBBike",        layer:bbbikeTileLayer,       abbrev:'B',  inControl:true  }
 	,{label:"CyclOSM",       layer:cyclosmTileLayer,      abbrev:'C',  inControl:true  }
-	,{label:"Berlin Aerial", layer:berlinAerialTileLayer, abbrev:'A',  inControl:true  }
-	,{label:"BVG",           layer:bvgStadtplanLayer,     abbrev:'BVG',inControl:false }
+	,{label:"BVG",           layer:bvgStadtplanLayer,     abbrev:'BVG',inControl:true  }
     ];
+
     var overlayMaps = {};
     for(var i=0; i<overlayDefs.length; i++) {
 	var overlayDef = overlayDefs[i];
@@ -541,7 +539,8 @@ function doLeaflet() {
 	if (initBaseMapAbbrev && console && console.debug) {
 	    console.debug("Basemap abbrev '" + initBaseMapAbbrev + "' unhandled, fallback to default bbbike layer");
 	}
-	initTileLayer = bbbikeTileLayer;
+	// initTileLayer = bbbikeTileLayer;
+	initTileLayer = osmTileLayer;
     }
     map.addLayer(initTileLayer);
     if (initTileLayer != bbbikeTileLayer) { // otherwise it looks like the first layer in control is rendered *additionally*
