@@ -1,12 +1,19 @@
 /* OSM design */
+
 a         {
-	text-decoration: none; 
-	color: green; 
+  text-decoration: none; 
+  color: green; 
 }
 
+
+div#listleft {
+  // text-align: center;
+  margin-left: 1em;
+}
+
+/* ??? */
 body {
-	/* background-color: #9c9; */
-	margin: 0px 0px 0px 0px;
-	text-align: center;
+  /* background-color: #9c9; */
+  margin: 0px 0px 0px 0px;
 }
 
