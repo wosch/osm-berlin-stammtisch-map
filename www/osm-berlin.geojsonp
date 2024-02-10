@@ -306,7 +306,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Restaurant Neumann's</b> : Alt-Moabit 126 : Moabit<br> 188) 02.02.2024 : N/A<br>187) 11.01.2024 : N/A<br>"
+            "name" : "<b>Restaurant Neumann's</b> : Alt-Moabit 126 : Moabit<br> 188) 02.02.2024 : 8<br>187) 11.01.2024 : 4<br>"
          },
          "type" : "Feature"
       },
@@ -334,7 +334,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Restaurant Split</b> : Blücherplatz : Kreuzberg<br> 184) 13.10.2023 : 1<br>178) 14.04.2023 : 12<br>"
+            "name" : "<b>Restaurant Split</b> : Blücherplatz : Kreuzberg<br> 184) 13.10.2023 : 11<br>178) 14.04.2023 : 12<br>"
          },
          "type" : "Feature"
       },
@@ -390,7 +390,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Weihnachtsmarkt Schloss Charlottenburg</b> : Spandauer Damm : Charlottenburg<br> 186) 15.12.2023 : 1<br>"
+            "name" : "<b>Weihnachtsmarkt Schloss Charlottenburg</b> : Spandauer Damm : Charlottenburg<br> 186) 15.12.2023 : 5<br>"
          },
          "type" : "Feature"
       },
