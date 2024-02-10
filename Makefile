@@ -2,9 +2,11 @@
 
 all: help
 SCRIPT= ./bin/geojsonp.pl
+FILE=	www/osm-berlin.geojsonp
 
 update:
-	${SCRIPT}
+	${SCRIPT} > ${FILE}.tmp
+	mv -f ${FILE}.tmp ${FILE}
 
 perlcheck:
 	perl -T -cw ${SCRIPT}
