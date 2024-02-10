@@ -48,10 +48,7 @@ var msg = {"en":{"Kartendaten":"Map data",
 		 "Qualit\u00e4t":"Smoothness",
 		 "Radwege":"Cycleways",
 		 "Unbeleuchtet":"Unlit",
-		 "Gr\u00fcne Wege":"Green ways",
-		 "Fragezeichen":"Unknown",
-		 "temp. Sperrungen":"Temp. blockings",
-		 "F\u00e4hrinfos":"ferry info"
+		 "Gr\u00fcne Wege":"Green ways"
 		}
 	  };
 function M(string) {
@@ -433,11 +430,6 @@ function doLeaflet() {
 	,{label:M("Radwege"),                 layer:bbbikeCyclewayTileLayer,   abbrev:'RW', inControl:true}
 	,{label:M("Unbeleuchtet"),            layer:bbbikeUnlitTileLayer,      abbrev:'NL', inControl:true}
 	,{label:M("Gr\u00fcne Wege"),         layer:bbbikeGreenTileLayer,      abbrev:'GR', inControl:true}
-	,{label:M("Fragezeichen"),            layer:bbbikeUnknownTileLayer,    abbrev:'FZ', inControl:true,  geojsonurl:bbbikeUnknownUrl}
-	,{label:M("nicht-\u00f6ffentl. Fz."), layer:bbbikeXXXLayer,            abbrev:'X',  inControl:false, geojsonurl:bbbikeXXXUrl}
-	,{label:M("zuk\u00fcnft. Fz."),       layer:bbbikeXXXFutureLayer,      abbrev:'XF', inControl:false, geojsonurl:bbbikeXXXFutureUrl}
-	,{label:M("temp. Sperrungen"),        layer:bbbikeTempBlockingsLayer,  abbrev:'TB', inControl:true,  geojsonurl:bbbikeTempBlockingsUrl}
-	,{label:M("F\u00e4hrinfos"),          layer:bbbikeCommentsFerryLayer,  abbrev:'CF', inControl:true,  geojsonurl:bbbikeCommentsFerryUrl}
     ];
 
     var baseMapDefs = [
