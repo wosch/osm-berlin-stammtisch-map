@@ -45,9 +45,10 @@ sub parse_csv {
         }
     );
 
-    open my $fh, "<", $file or die "$file: $!"; binmode( $fh, ":raw" );
-    #open my $fh, "<:encoding(utf8)", $file or die "$file: $!";
+    open my $fh, "<", $file or die "$file: $!";
+    binmode( $fh, ":raw" );
 
+    #open my $fh, "<:encoding(utf8)", $file or die "$file: $!";
 
     my @rows = ();
     while ( my $row = $csv->getline($fh) ) {
@@ -85,8 +86,8 @@ sub location_hash {
             'lon'       => $lon,
             'lat'       => $lat,
             'name'      => $name,
-            'street'    => $street   // '',
-            'city'      => $city     // '',
+            'street'    => $street // '',
+            'city'      => $city // '',
             'homepage'  => $homepage // '',
             'name_norm' => $name_norm
         };
@@ -105,6 +106,7 @@ sub homepage {
     }
     else {
         return qq[<b>$name</b>];
+
         #return qq[<b><a target='_new' href='$url'>$name</a></b>];
     }
 }
@@ -118,8 +120,8 @@ sub geojsonp {
         my ( $number, $date, $name, $wiki_count, $real_count ) = @$s;
         my $name_norm = name_norm($name);
 
-        if (!$real_count) {
-           $real_count = $wiki_count || 'N/A';
+        if ( !$real_count ) {
+            $real_count = $wiki_count || 'N/A';
         }
 
         # first entry (last meeting)
@@ -137,7 +139,7 @@ sub geojsonp {
               . " : "
               . $location->{$name_norm}->{'street'} . " : "
               . $location->{$name_norm}->{'city'} . "<br> "
-              . $number . ". "
+              . $number . ") "
               . $date . " : "
               . $real_count . "<br>";
         }
@@ -145,7 +147,7 @@ sub geojsonp {
         # earlier meetings
         else {
             $hash->{$name_norm} .=
-              $number . ". " . $date . " : " . $real_count . "<br>";
+              $number . ") " . $date . " : " . $real_count . "<br>";
         }
     }
 
@@ -189,11 +191,11 @@ sub geojson_obj {
                 "coordinates" => [ $obj->{"lon"}, $obj->{"lat"} ],
                 "type"        => "Point"
             },
-            "properties" => { 
-		"cat" => "X",
-		"name" => $description->{$key}
-	    },
-            "type"       => "Feature"
+            "properties" => {
+                "cat"  => "X",
+                "name" => $description->{$key}
+            },
+            "type" => "Feature"
         };
 
         push @list, $h;
@@ -212,18 +214,18 @@ sub print_geojson {
 }
 
 sub check_descriptions {
-  my $location = shift;
-  my $description = shift;
+    my $location    = shift;
+    my $description = shift;
 
-  foreach my $l (sort keys %$location) {
-    warn "Missing: $l\n" if !exists $description->{$l};
-  }
+    foreach my $l ( sort keys %$location ) {
+        warn "Missing: $l\n" if !exists $description->{$l};
+    }
 }
 
 #############################################################################
 # main
 #
-binmode( \*STDIN, ":utf8" );
+binmode( \*STDIN,  ":utf8" );
 binmode( \*STDOUT, ":utf8" );
 binmode( \*STDERR, ":utf8" );
 
@@ -238,15 +240,15 @@ my $l          = &parse_csv($location_csv);
 my $location   = &location_hash($l);
 my $stammtisch = &parse_csv($stammtisch_csv);
 
-
 my $description = &geojsonp( $location, $stammtisch );
 my $geojson_obj = &geojson_obj( $location, $description );
 &print_geojson($geojson_obj);
 
-if ($debug >= 1) {
-  warn "Found locations: ", scalar(keys %$location), " number of meetings: ", scalar(@$stammtisch), "\n";
-  warn "Found descriptions ", scalar(keys %$description), "\n";
-  &check_descriptions($location, $description);
+if ( $debug >= 1 ) {
+    warn "Found locations: ", scalar( keys %$location ),
+      " number of meetings: ", scalar(@$stammtisch), "\n";
+    warn "Found descriptions ", scalar( keys %$description ), "\n";
+    &check_descriptions( $location, $description );
 }
 
 #warn Dumper($location);
