@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+html, body, #map {
+  height: 100%;
+}
+
+.anycontrol { font-size: small; padding:2px; }
+.anycontrol_inactive { background-color:#ffffff; color:#000000; }
+.anycontrol_active   { background-color:#000000; color:#ffffff; }
+
+/* normal control positions are at z-index: 1000, make the copyright control below it */
+.leaflet-bottom.leaflet-right { z-index: 999; }
+
+/* looks better for tiny screens, everything is right-aligned */
+.leaflet-control-attribution { text-align: right; }
+
+#list, #list tr, #list td {
+    font-size:small;
+}
+#list a {
+    text-decoration: none;
+    color: #00000;
+}
+#list a:hover, #list a:visited, #list a:link {
+    color: #00000;
+}
