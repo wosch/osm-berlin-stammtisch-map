@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <!-- -*-html-*- -->
 <html>
  <head>
- <title>OSM Berlin Stammtisch</title>
+ <title>OSM Berlin Stammtisch Map</title>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <meta name="keywords" content="bbbike leaflet" />
  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -47,11 +47,14 @@ activate_loc   = false;
  //-->
  </script>
 
- <script src="js/bbbikeleaflet.js?v=1.9" type="text/javascript"></script>
+  <script src="js/bbbikeleaflet.js?v=1.9" type="text/javascript"></script>
 
-<script>function geoJsonResponse(geoJson) { initialGeojson = geoJson }</script>
-<script type="application/javascript" src="osm-berlin.geojsonp"></script>
+  <script>function geoJsonResponse(geoJson) { initialGeojson = geoJson }</script>
+
+  <!-- data from https://wiki.openstreetmap.org/wiki/Berlin/Stammtisch/Geschichte -->
+  <script type="application/javascript" src="osm-berlin.geojsonp"></script>
 </head>
+
 
 <body onload="doLeaflet();">
  <div id="listleft" style="float:left; overflow:hidden; visibility:hidden;"></div>
