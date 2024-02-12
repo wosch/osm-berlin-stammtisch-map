@@ -1,16 +1,16 @@
 # Copyright (c) Feb 2024-2024 Wolfram Schneider, https://bbbike.org
 
 all: help
-SCRIPT= perl ./bin/geojsonp.pl
+SCRIPT= ./bin/geojsonp.pl
 FILE=	www/osm-berlin.geojsonp
 DOCKER_BUILD_FLAGS?=	--no-cache
 
 update:
-	${SCRIPT} > ${FILE}.tmp
-	mv -f ${FILE}.tmp ${FILE}
+	@perl ${SCRIPT} > ${FILE}.tmp
+	@mv -f ${FILE}.tmp ${FILE}
 
 perlcheck:
-	perl -T -cw ${SCRIPT}
+	perl -cw ${SCRIPT}
 
 perltidy: perlcheck
 	perltidy -b ${SCRIPT}
@@ -26,7 +26,7 @@ distclean:
 	git clean -fdx
 
 help:
-	@echo "make -s update"
+	@echo "make update"
 	@echo "make docker-build"
 	@echo "make docker-run"
 	@echo "make perltidy"
