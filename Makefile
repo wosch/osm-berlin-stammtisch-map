@@ -3,6 +3,7 @@
 all: help
 SCRIPT= perl ./bin/geojsonp.pl
 FILE=	www/osm-berlin.geojsonp
+DOCKER_BUILD_FLAGS?=	--no-cache
 
 update:
 	${SCRIPT} > ${FILE}.tmp
@@ -15,9 +16,9 @@ perltidy: perlcheck
 	perltidy -b ${SCRIPT}
 
 docker-build:
-	docker build -t osm/berlin/stammtisch -f ./Dockerfile .
+	docker build ${DOCKER_BUILD_FLAGS} -t osm/berlin/stammtisch -f ./Dockerfile .
 docker-run:
-	docker run -it --rm -v $$(pwd):/osm-berlin-stammtisch-ma osm/berlin/stammtisch
+	docker run -it --rm -v $$(pwd):/osm-berlin-stammtisch-map osm/berlin/stammtisch
 
 clean:
 	rm -f bin/*.bak
