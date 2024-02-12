@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl -T
+#!/usr/local/bin/perl
 # Copyright (c) Feb 2024-2024 Wolfram Schneider, https://bbbike.org
 #
 # geojsonp.pl - generate a geojsonp file for Berlin OSM Stammtisch
