@@ -306,7 +306,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Restaurant Neumann's</b> : Alt-Moabit 126 : Moabit<br> 188) 02.02.2024 : 8<br>187) 11.01.2024 : 4<br>"
+            "name" : "<b>Restaurant Neumann's</b> : Alt-Moabit 126 : Moabit<br> 190) 12.04.2024 : 12<br>188) 02.02.2024 : 8<br>187) 11.01.2024 : 4<br>"
          },
          "type" : "Feature"
       },
