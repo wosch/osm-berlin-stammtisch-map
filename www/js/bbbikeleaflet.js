@@ -841,6 +841,9 @@ function enableGeolocationInMap() {
 }
 
 function addLocators() {
+    // disable
+    return;
+
     if (enable_accel) {
 	accel = new AccelHandler();
     }
