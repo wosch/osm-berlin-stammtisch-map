@@ -236,7 +236,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>machBar</b> : Friedrich-Engels-Straße 22 : Potsdam<br> 168) 10.06.2022 : 9<br>"
+            "name" : "<b>machBar</b> : Friedrich-Engels-Straße 22 : Potsdam<br> 191) 09.05.2024 : 9<br>168) 10.06.2022 : 9<br>"
          },
          "type" : "Feature"
       },
