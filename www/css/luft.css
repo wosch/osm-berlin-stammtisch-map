@@ -20,7 +20,8 @@ body {
 span#homelink {
     position: fixed;
     top: 0em;
-    right: 5em;
+    right: 4em;
+    padding-left: 3em;
     z-index: 1000000000;
 }
 
