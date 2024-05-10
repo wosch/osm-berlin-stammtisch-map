@@ -17,3 +17,10 @@ body {
   margin: 0px 0px 0px 0px;
 }
 
+span#homelink {
+    position: fixed;
+    top: 0em;
+    right: 5em;
+    z-index: 1000000000;
+}
+

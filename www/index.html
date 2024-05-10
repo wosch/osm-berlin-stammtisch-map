@@ -46,19 +46,18 @@ activate_loc   = false;
 
  //-->
  </script>
+ <script src="js/bbbikeleaflet.js?v=1.9" type="text/javascript"></script>
+ <script>function geoJsonResponse(geoJson) { initialGeojson = geoJson }</script>
 
-  <script src="js/bbbikeleaflet.js?v=1.9" type="text/javascript"></script>
-
-  <script>function geoJsonResponse(geoJson) { initialGeojson = geoJson }</script>
-
-  <!-- data from https://wiki.openstreetmap.org/wiki/Berlin/Stammtisch/Geschichte -->
-  <script type="application/javascript" src="osm-berlin.geojsonp"></script>
+ <!-- data from https://wiki.openstreetmap.org/wiki/Berlin/Stammtisch/Geschichte -->
+ <script type="application/javascript" src="osm-berlin.geojsonp"></script>
 </head>
 
-
 <body onload="doLeaflet();">
+ <span id="homelink"><h3><a target="_new" href="https://wiki.openstreetmap.org/wiki/Berlin/Stammtisch">Berlin und Brandenburger OSM- und FOSSGIS-Stammtisch</a></h3></span>
  <div id="listleft" style="float:left; overflow:hidden; visibility:hidden;"></div>
  <div id="map"></div>
  <div id="listbelow" style="overflow:hidden; visibility:hidden;"></div>
 </body>
+
 </html>
