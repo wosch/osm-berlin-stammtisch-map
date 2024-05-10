@@ -1072,6 +1072,7 @@ function showMarker(id) {
     var marker = id2marker[id];
     if (marker) {
 	marker.openPopup();
+	map.setView(marker.getLatLng(),13);
     } else {
 	alert('Sorry, no marker with id ' + id);
     }
