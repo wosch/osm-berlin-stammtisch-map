@@ -11,5 +11,15 @@ https://download.bbbike.org/osm/osm-berlin-stammtisch-map/www/
 Datenquelle:
 https://wiki.openstreetmap.org/wiki/Berlin/Stammtisch/Geschichte
 
+
+Installation & updates
+---------------------------------
+$ make update
+
+
+etc/location.csv    - Adressen der Treffen
+etc/stammtisch.csv  - Termine monatliche Treffen
+
+
 --
-Feb 2024
+Mai 2024
