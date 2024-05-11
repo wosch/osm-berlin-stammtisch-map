@@ -1,4 +1,7 @@
 // URL layout, lang detection
+var initialGeojson = null;
+var use_osm_de_map = false;
+
 var thisURL = location.href;
 var isHttps = thisURL.match("^https://");
 var lang = "de";
