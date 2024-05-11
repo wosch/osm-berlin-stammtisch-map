@@ -12,7 +12,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Alte Post Eberswalde</b> : Eisenbahnstraße 101 : Eberswalde<br> 158) 13.08.2021 : 8<br>"
+            "name" : "<b>Alte Post Eberswalde</b> : Eisenbahnstraße 101 : Eberswalde<br> <span class='y2021'>158) 13.08.2021 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -26,7 +26,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Berlin Prater Garten</b> : Kastanienallee 7 : Prenzlauer Berg<br> 170) 12.08.2022 : 8<br>"
+            "name" : "<b>Berlin Prater Garten</b> : Kastanienallee 7 : Prenzlauer Berg<br> <span class='y2022'>170) 12.08.2022 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -40,7 +40,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Biergarten am Griebnitzsee</b> : S-Griebnitzsee : Babelsberg<br> 147) 10.09.2020 : 8<br>"
+            "name" : "<b>Biergarten am Griebnitzsee</b> : S-Griebnitzsee : Babelsberg<br> <span class='y2020'>147) 10.09.2020 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -54,7 +54,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Brauhaus Südstern</b> : Hasenheide 69 : Kreuzberg<br> 100) 14.10.2016 : 19<br>"
+            "name" : "<b>Brauhaus Südstern</b> : Hasenheide 69 : Kreuzberg<br> <span class='y2016'>100) 14.10.2016 : 19<br></span>"
          },
          "type" : "Feature"
       },
@@ -68,7 +68,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Brło Brwhouse</b> : Gleisdreieck : Kreuzberg<br> 182) 11.08.2023 : 9<br>"
+            "name" : "<b>Brło Brwhouse</b> : Gleisdreieck : Kreuzberg<br> <span class='y2023'>182) 11.08.2023 : 9<br></span>"
          },
          "type" : "Feature"
       },
@@ -82,7 +82,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>c-base</b> : Rungestraße 20 : Mitte<br> 62) 11.07.2013 : 3<br>61) 13.06.2013 : 1<br>60) 09.05.2013 : 2<br>59) 11.04.2013 : 3<br>58) 14.03.2013 : >0<br>57) 14.02.2013 : 5<br>56) 10.01.2013 : 4<br>55) 13.12.2012 : 2<br>54) 08.11.2012 : 3<br>53) 11.10.2012 : 3<br>52) 13.09.2012 : 3<br>51) 09.08.2012 : 4<br>50) 12.07.2012 : 3<br>49) 14.06.2012 : 4<br>48) 10.05.2012 : 4<br>47) 12.04.2012 : 4<br>46) 08.03.2012 : 3<br>45) 09.02.2012 : 5<br>44) 12.01.2012 : 3<br>43) 08.12.2011 : 7<br>42) 10.11.2011 : 2<br>41) 13.10.2011 : 3<br>40) 08.09.2011 : 7<br>39) 11.08.2011 : 2<br>38) 14.07.2011 : 5<br>37) 09.06.2011 : 4<br>35) 14.04.2011 : 9<br>34) 11.03.2011 : 5<br>33) 10.02.2011 : 4<br>32) 13.01.2011 : 3<br>31) 09.12.2010 : 6<br>30) 11.11.2010 : 5<br>29) 14.10.2010 : 4<br>28) 09.09.2010 : 6<br>27) 12.08.2010 : 8<br>"
+            "name" : "<b>c-base</b> : Rungestraße 20 : Mitte<br> <span class='y2013'>62) 11.07.2013 : 3<br></span><span class='y2013'>61) 13.06.2013 : 1<br></span><span class='y2013'>60) 09.05.2013 : 2<br></span><span class='y2013'>59) 11.04.2013 : 3<br></span><span class='y2013'>58) 14.03.2013 : >0<br></span><span class='y2013'>57) 14.02.2013 : 5<br></span><span class='y2013'>56) 10.01.2013 : 4<br></span><span class='y2012'>55) 13.12.2012 : 2<br></span><span class='y2012'>54) 08.11.2012 : 3<br></span><span class='y2012'>53) 11.10.2012 : 3<br></span><span class='y2012'>52) 13.09.2012 : 3<br></span><span class='y2012'>51) 09.08.2012 : 4<br></span><span class='y2012'>50) 12.07.2012 : 3<br></span><span class='y2012'>49) 14.06.2012 : 4<br></span><span class='y2012'>48) 10.05.2012 : 4<br></span><span class='y2012'>47) 12.04.2012 : 4<br></span><span class='y2012'>46) 08.03.2012 : 3<br></span><span class='y2012'>45) 09.02.2012 : 5<br></span><span class='y2012'>44) 12.01.2012 : 3<br></span><span class='y2011'>43) 08.12.2011 : 7<br></span><span class='y2011'>42) 10.11.2011 : 2<br></span><span class='y2011'>41) 13.10.2011 : 3<br></span><span class='y2011'>40) 08.09.2011 : 7<br></span><span class='y2011'>39) 11.08.2011 : 2<br></span><span class='y2011'>38) 14.07.2011 : 5<br></span><span class='y2011'>37) 09.06.2011 : 4<br></span><span class='y2011'>35) 14.04.2011 : 9<br></span><span class='y2011'>34) 11.03.2011 : 5<br></span><span class='y2011'>33) 10.02.2011 : 4<br></span><span class='y2011'>32) 13.01.2011 : 3<br></span><span class='y2010'>31) 09.12.2010 : 6<br></span><span class='y2010'>30) 11.11.2010 : 5<br></span><span class='y2010'>29) 14.10.2010 : 4<br></span><span class='y2010'>28) 09.09.2010 : 6<br></span><span class='y2010'>27) 12.08.2010 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -96,7 +96,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Cafe auszeit</b> : Kiautschoustraße 12a : Wedding<br> 9) 12.02.2009 : 4<br>8) 08.01.2009 : 5<br>7) 11.12.2008 : 4<br>6) 13.11.2008 : 10<br>5) 09.10.2008 : 6<br>4) 11.09.2008 : 7<br>3) 14.08.2008 : 8<br>"
+            "name" : "<b>Cafe auszeit</b> : Kiautschoustraße 12a : Wedding<br> <span class='y2009'>9) 12.02.2009 : 4<br></span><span class='y2009'>8) 08.01.2009 : 5<br></span><span class='y2008'>7) 11.12.2008 : 4<br></span><span class='y2008'>6) 13.11.2008 : 10<br></span><span class='y2008'>5) 09.10.2008 : 6<br></span><span class='y2008'>4) 11.09.2008 : 7<br></span><span class='y2008'>3) 14.08.2008 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -110,7 +110,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Dolden Mädel</b> : Mehringdamm 80 : Kreuzberg<br> 179) 11.05.2023 : 8<br>"
+            "name" : "<b>Dolden Mädel</b> : Mehringdamm 80 : Kreuzberg<br> <span class='y2023'>179) 11.05.2023 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -124,7 +124,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Eierschale Berlin</b> : Podbielskiallee 50 : Dahlem<br> 160) 08.10.2021 : 3<br>"
+            "name" : "<b>Eierschale Berlin</b> : Podbielskiallee 50 : Dahlem<br> <span class='y2021'>160) 08.10.2021 : 3<br></span>"
          },
          "type" : "Feature"
       },
@@ -138,7 +138,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Gleis 6</b> : Karl-Liebknecht-Straße 4 : Babelsberg<br> 120) 08.06.2018 : 7<br>"
+            "name" : "<b>Gleis 6</b> : Karl-Liebknecht-Straße 4 : Babelsberg<br> <span class='y2018'>120) 08.06.2018 : 7<br></span>"
          },
          "type" : "Feature"
       },
@@ -152,7 +152,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Golgatha am Kreuzberg</b> : Dudenstr. 40 : Kreuzberg<br> 121) 12.07.2018 : 11<br>"
+            "name" : "<b>Golgatha am Kreuzberg</b> : Dudenstr. 40 : Kreuzberg<br> <span class='y2018'>121) 12.07.2018 : 11<br></span>"
          },
          "type" : "Feature"
       },
@@ -166,7 +166,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>HU Berlin Adlershof</b> : Rudower Chausee : Adlershof<br> 174) 09.12.2022 : 5<br>"
+            "name" : "<b>HU Berlin Adlershof</b> : Rudower Chausee : Adlershof<br> <span class='y2022'>174) 09.12.2022 : 5<br></span>"
          },
          "type" : "Feature"
       },
@@ -180,7 +180,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>I Due</b> : Kaiserdamm 40 : Westend<br> 111b) 25.09.2017 : 11<br>"
+            "name" : "<b>I Due</b> : Kaiserdamm 40 : Westend<br> <span class='y2017'>111b) 25.09.2017 : 11<br></span>"
          },
          "type" : "Feature"
       },
@@ -194,7 +194,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Interfood</b> : Finkenkruger Straße 2 : Falkensee<br> 108) 09.06.2017 : 9<br>"
+            "name" : "<b>Interfood</b> : Finkenkruger Straße 2 : Falkensee<br> <span class='y2017'>108) 09.06.2017 : 9<br></span>"
          },
          "type" : "Feature"
       },
@@ -208,7 +208,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Koordinierungsstelle FOSSGIS e.V.</b> : Bundesallee 23 : Wilmersdorf<br> 167) 12.05.2022 : 11<br>"
+            "name" : "<b>Koordinierungsstelle FOSSGIS e.V.</b> : Bundesallee 23 : Wilmersdorf<br> <span class='y2022'>167) 12.05.2022 : 11<br></span>"
          },
          "type" : "Feature"
       },
@@ -222,7 +222,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Luftgarten</b> : Tempelhofer Feld : Neukölln<br> 159) 09.09.2021 : 8<br>146) 14.08.2020 : 9<br>"
+            "name" : "<b>Luftgarten</b> : Tempelhofer Feld : Neukölln<br> <span class='y2021'>159) 09.09.2021 : 8<br></span><span class='y2020'>146) 14.08.2020 : 9<br></span>"
          },
          "type" : "Feature"
       },
@@ -236,7 +236,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>machBar</b> : Friedrich-Engels-Straße 22 : Potsdam<br> 191) 09.05.2024 : 9<br>168) 10.06.2022 : 9<br>"
+            "name" : "<b>machBar</b> : Friedrich-Engels-Straße 22 : Potsdam<br> <span class='y2024'>191) 09.05.2024 : 9<br></span><span class='y2022'>168) 10.06.2022 : 9<br></span>"
          },
          "type" : "Feature"
       },
@@ -250,7 +250,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Oliver, KGA Am Stadtpark I e.V.</b> : Waghäuseler Str. : Wilmersdorf<br> 181) 13.07.2023 : 16<br>169) 14.07.2022 : 12<br>"
+            "name" : "<b>Oliver, KGA Am Stadtpark I e.V.</b> : Waghäuseler Str. : Wilmersdorf<br> <span class='y2023'>181) 13.07.2023 : 16<br></span><span class='y2022'>169) 14.07.2022 : 12<br></span>"
          },
          "type" : "Feature"
       },
@@ -264,7 +264,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Online</b> : Online : Mitte<br> 185) 09.11.2023 : 1<br>177) 09.03.2023 : 4<br>175) 12.01.2023 : 7<br>173) 10.11.2022 : 8<br>171) 08.09.2022 : 8<br>166) 08.04.2022 : 8<br>165) 10.03.2022 : 13<br>164) 11.02.2022 : 6<br>163) 13.01.2022 : 7<br>162) 10.12.2021 : 8<br>161) 11.11.2021 : 18<br>157) 08.07.2021 : 9<br>156) 11.06.2021 : 9<br>155) 13.05.2021 : 7<br>154) 09.04.2021 : 11<br>153) 11.03.2021 : 8<br>152) 12.02.2021 : 12<br>151) 14.01.2021 : 11<br>150) 11.12.2020 : 11<br>149) 12.11.2020 : 10<br>148) 09.10.2020 : 10<br>145) 09.07.2020 : 12<br>144) 12.06.2020 : 7<br>143) 14.05.2020 : 11<br>142) 10.04.2020 : 8<br>"
+            "name" : "<b>Online</b> : Online : Mitte<br> <span class='y2023'>185) 09.11.2023 : 1<br></span><span class='y2023'>177) 09.03.2023 : 4<br></span><span class='y2023'>175) 12.01.2023 : 7<br></span><span class='y2022'>173) 10.11.2022 : 8<br></span><span class='y2022'>171) 08.09.2022 : 8<br></span><span class='y2022'>166) 08.04.2022 : 8<br></span><span class='y2022'>165) 10.03.2022 : 13<br></span><span class='y2022'>164) 11.02.2022 : 6<br></span><span class='y2022'>163) 13.01.2022 : 7<br></span><span class='y2021'>162) 10.12.2021 : 8<br></span><span class='y2021'>161) 11.11.2021 : 18<br></span><span class='y2021'>157) 08.07.2021 : 9<br></span><span class='y2021'>156) 11.06.2021 : 9<br></span><span class='y2021'>155) 13.05.2021 : 7<br></span><span class='y2021'>154) 09.04.2021 : 11<br></span><span class='y2021'>153) 11.03.2021 : 8<br></span><span class='y2021'>152) 12.02.2021 : 12<br></span><span class='y2021'>151) 14.01.2021 : 11<br></span><span class='y2020'>150) 11.12.2020 : 11<br></span><span class='y2020'>149) 12.11.2020 : 10<br></span><span class='y2020'>148) 09.10.2020 : 10<br></span><span class='y2020'>145) 09.07.2020 : 12<br></span><span class='y2020'>144) 12.06.2020 : 7<br></span><span class='y2020'>143) 14.05.2020 : 11<br></span><span class='y2020'>142) 10.04.2020 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -278,7 +278,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Pizzaria SI</b> : Otto-Suhr-Allee 19 : Charlottenbuerg<br> 2) 10.07.2008 : ?<br>1) 30.05.2008 : 27<br>"
+            "name" : "<b>Pizzaria SI</b> : Otto-Suhr-Allee 19 : Charlottenbuerg<br> <span class='y2008'>2) 10.07.2008 : ?<br></span><span class='y2008'>1) 30.05.2008 : 27<br></span>"
          },
          "type" : "Feature"
       },
@@ -292,7 +292,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Resonanz</b> : Ebersstr. 73 : Schöneberg<br> 141) 12.03.2020 : 2<br>140) 14.02.2020 : 10<br>139) 09.01.2020 : 9<br>138) 13.12.2019 : 6<br>137) 14.11.2019 : 6<br>136) 11.10.2019 : 14<br>135) 12.09.2019 : 6<br>133) 11.07.2019 : 9<br>132) 14.06.2019 : 5<br>131) 09.05.2019 : 19<br>130) 12.04.2019 : 10<br>129) 14.03.2019 : 7<br>128) 08.02.2019 : 9<br>127) 10.01.2019 : 9<br>126) 14.12.2018 : 7<br>125) 08.11.2018 : 7<br>124) 12.10.2018 : 9<br>123) 14.09.2018 : 6<br>122) 10.08.2018 : 5<br>119) 10.05.2018 : 4<br>118) 13.04.2018 : 12<br>117) 08.03.2018 : 6<br>116) 09.02.2018 : 10<br>115) 11.01.2018 : 6<br>114) 08.12.2017 : 7<br>113) 09.11.2017 : 10<br>112) 13.10.2017 : 8<br>111) 14.09.2017 : 10<br>110) 11.08.2017 : 13<br>109) 13.07.2017 : 14<br>107) 11.05.2017 : 4<br>106) 14.04.2017 : 9<br>105) 09.03.2017 : 14<br>104) 10.02.2017 : 13<br>103) 12.01.2017 : 8<br>102) 09.12.2016 : 8<br>101) 10.11.2016 : 8<br>99) 08.09.2016 : 11<br>98) 12.08.2016 : 1<br>97) 14.07.2016 : 15<br>96) 09.06.2016 : 15<br>95) 12.05.2016 : 5<br>94) 08.04.2016 : 5<br>93) 10.03.2016 : 3<br>92) 12.02.2016 : 8<br>91) 14.01.2016 : 6<br>90) 11.12.2015 : 8<br>89) 12.11.2015 : 10<br>88) 09.10.2015 : 7<br>87) 10.09.2015 : 8<br>86) 14.08.2015 : 13<br>85) 09.07.2015 : 9<br>84) 12.06.2015 : 12<br>83) 14.05.2015 : 5<br>82) 10.04.2015 : 5<br>81) 12.03.2015 : 2<br>80) 13.02.2015 : 6<br>79) 08.01.2014 : 5<br>78) 12.12.2014 : 5<br>77) 13.11.2014 : 4<br>76) 10.10.2014 : 3<br>75) 11.09.2014 : 1<br>74) 08.08.2014 : 2<br>73) 10.07.2014 : 6<br>72) 13.06.2014 : 2<br>71) 11.04.2014 : 6<br>70) 13.03.2014 : 1<br>69) 14.02.2014 : 6<br>68) 09.01.2014 : 6<br>67) 13.12.2013 : 6<br>66) 14.11.2013 : 4<br>65) 11.10.2013 : 5<br>64) 12.09.2013 : 5<br>63) 08.08.2013 : 3<br>"
+            "name" : "<b>Resonanz</b> : Ebersstr. 73 : Schöneberg<br> <span class='y2020'>141) 12.03.2020 : 2<br></span><span class='y2020'>140) 14.02.2020 : 10<br></span><span class='y2020'>139) 09.01.2020 : 9<br></span><span class='y2019'>138) 13.12.2019 : 6<br></span><span class='y2019'>137) 14.11.2019 : 6<br></span><span class='y2019'>136) 11.10.2019 : 14<br></span><span class='y2019'>135) 12.09.2019 : 6<br></span><span class='y2019'>133) 11.07.2019 : 9<br></span><span class='y2019'>132) 14.06.2019 : 5<br></span><span class='y2019'>131) 09.05.2019 : 19<br></span><span class='y2019'>130) 12.04.2019 : 10<br></span><span class='y2019'>129) 14.03.2019 : 7<br></span><span class='y2019'>128) 08.02.2019 : 9<br></span><span class='y2019'>127) 10.01.2019 : 9<br></span><span class='y2018'>126) 14.12.2018 : 7<br></span><span class='y2018'>125) 08.11.2018 : 7<br></span><span class='y2018'>124) 12.10.2018 : 9<br></span><span class='y2018'>123) 14.09.2018 : 6<br></span><span class='y2018'>122) 10.08.2018 : 5<br></span><span class='y2018'>119) 10.05.2018 : 4<br></span><span class='y2018'>118) 13.04.2018 : 12<br></span><span class='y2018'>117) 08.03.2018 : 6<br></span><span class='y2018'>116) 09.02.2018 : 10<br></span><span class='y2018'>115) 11.01.2018 : 6<br></span><span class='y2017'>114) 08.12.2017 : 7<br></span><span class='y2017'>113) 09.11.2017 : 10<br></span><span class='y2017'>112) 13.10.2017 : 8<br></span><span class='y2017'>111) 14.09.2017 : 10<br></span><span class='y2017'>110) 11.08.2017 : 13<br></span><span class='y2017'>109) 13.07.2017 : 14<br></span><span class='y2017'>107) 11.05.2017 : 4<br></span><span class='y2017'>106) 14.04.2017 : 9<br></span><span class='y2017'>105) 09.03.2017 : 14<br></span><span class='y2017'>104) 10.02.2017 : 13<br></span><span class='y2017'>103) 12.01.2017 : 8<br></span><span class='y2016'>102) 09.12.2016 : 8<br></span><span class='y2016'>101) 10.11.2016 : 8<br></span><span class='y2016'>99) 08.09.2016 : 11<br></span><span class='y2016'>98) 12.08.2016 : 1<br></span><span class='y2016'>97) 14.07.2016 : 15<br></span><span class='y2016'>96) 09.06.2016 : 15<br></span><span class='y2016'>95) 12.05.2016 : 5<br></span><span class='y2016'>94) 08.04.2016 : 5<br></span><span class='y2016'>93) 10.03.2016 : 3<br></span><span class='y2016'>92) 12.02.2016 : 8<br></span><span class='y2016'>91) 14.01.2016 : 6<br></span><span class='y2015'>90) 11.12.2015 : 8<br></span><span class='y2015'>89) 12.11.2015 : 10<br></span><span class='y2015'>88) 09.10.2015 : 7<br></span><span class='y2015'>87) 10.09.2015 : 8<br></span><span class='y2015'>86) 14.08.2015 : 13<br></span><span class='y2015'>85) 09.07.2015 : 9<br></span><span class='y2015'>84) 12.06.2015 : 12<br></span><span class='y2015'>83) 14.05.2015 : 5<br></span><span class='y2015'>82) 10.04.2015 : 5<br></span><span class='y2015'>81) 12.03.2015 : 2<br></span><span class='y2015'>80) 13.02.2015 : 6<br></span><span class='y2014'>79) 08.01.2014 : 5<br></span><span class='y2014'>78) 12.12.2014 : 5<br></span><span class='y2014'>77) 13.11.2014 : 4<br></span><span class='y2014'>76) 10.10.2014 : 3<br></span><span class='y2014'>75) 11.09.2014 : 1<br></span><span class='y2014'>74) 08.08.2014 : 2<br></span><span class='y2014'>73) 10.07.2014 : 6<br></span><span class='y2014'>72) 13.06.2014 : 2<br></span><span class='y2014'>71) 11.04.2014 : 6<br></span><span class='y2014'>70) 13.03.2014 : 1<br></span><span class='y2014'>69) 14.02.2014 : 6<br></span><span class='y2014'>68) 09.01.2014 : 6<br></span><span class='y2013'>67) 13.12.2013 : 6<br></span><span class='y2013'>66) 14.11.2013 : 4<br></span><span class='y2013'>65) 11.10.2013 : 5<br></span><span class='y2013'>64) 12.09.2013 : 5<br></span><span class='y2013'>63) 08.08.2013 : 3<br></span>"
          },
          "type" : "Feature"
       },
@@ -306,7 +306,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Restaurant Neumann's</b> : Alt-Moabit 126 : Moabit<br> 190) 12.04.2024 : 12<br>188) 02.02.2024 : 8<br>187) 11.01.2024 : 4<br>"
+            "name" : "<b>Restaurant Neumann's</b> : Alt-Moabit 126 : Moabit<br> <span class='y2024'>190) 12.04.2024 : 12<br></span><span class='y2024'>188) 02.02.2024 : 8<br></span><span class='y2024'>187) 11.01.2024 : 4<br></span>"
          },
          "type" : "Feature"
       },
@@ -320,7 +320,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Restaurant Otto Hiemke</b> : Karl-Gruhl-Straße 55 : Babelsberg<br> 183) 14.09.2023 : 8<br>"
+            "name" : "<b>Restaurant Otto Hiemke</b> : Karl-Gruhl-Straße 55 : Babelsberg<br> <span class='y2023'>183) 14.09.2023 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -334,7 +334,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Restaurant Split</b> : Blücherplatz : Kreuzberg<br> 184) 13.10.2023 : 11<br>178) 14.04.2023 : 12<br>"
+            "name" : "<b>Restaurant Split</b> : Blücherplatz : Kreuzberg<br> <span class='y2023'>184) 13.10.2023 : 11<br></span><span class='y2023'>178) 14.04.2023 : 12<br></span>"
          },
          "type" : "Feature"
       },
@@ -348,7 +348,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Romiosini am ICC</b> : Neue Kantstr : Charlottenburg<br> 36) 13.05.2011 : -<br>25) 11.06.2010 : -<br>"
+            "name" : "<b>Romiosini am ICC</b> : Neue Kantstr : Charlottenburg<br> <span class='y2011'>36) 13.05.2011 : -<br></span><span class='y2010'>25) 11.06.2010 : -<br></span>"
          },
          "type" : "Feature"
       },
@@ -362,7 +362,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Tante Elli</b> : Lüderitzstraße 5 : Wedding<br> 26) 08.07.2010 : 4<br>24) 20.05.2010 : 3<br>23) 08.04.2010 : 5<br>22) 11.03.2010 : 6<br>21) 11.02.2010 : 8<br>20) 14.01.2010 : 7<br>19) 10.12.2009 : 7<br>18) 12.11.2009 : 7<br>17) 08.10.2009 : 5<br>16) 10.09.2009 : 3<br>15) 13.08.2009 : 11<br>14) 09.07.2009 : 7<br>13) 11.06.2009 : 6<br>12) 14.05.2009 : 8<br>11) 09.04.2009 : 7<br>10) 12.03.2009 : 5<br>"
+            "name" : "<b>Tante Elli</b> : Lüderitzstraße 5 : Wedding<br> <span class='y2010'>26) 08.07.2010 : 4<br></span><span class='y2010'>24) 20.05.2010 : 3<br></span><span class='y2010'>23) 08.04.2010 : 5<br></span><span class='y2010'>22) 11.03.2010 : 6<br></span><span class='y2010'>21) 11.02.2010 : 8<br></span><span class='y2010'>20) 14.01.2010 : 7<br></span><span class='y2009'>19) 10.12.2009 : 7<br></span><span class='y2009'>18) 12.11.2009 : 7<br></span><span class='y2009'>17) 08.10.2009 : 5<br></span><span class='y2009'>16) 10.09.2009 : 3<br></span><span class='y2009'>15) 13.08.2009 : 11<br></span><span class='y2009'>14) 09.07.2009 : 7<br></span><span class='y2009'>13) 11.06.2009 : 6<br></span><span class='y2009'>12) 14.05.2009 : 8<br></span><span class='y2009'>11) 09.04.2009 : 7<br></span><span class='y2009'>10) 12.03.2009 : 5<br></span>"
          },
          "type" : "Feature"
       },
@@ -376,7 +376,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Villa Rixdorf</b> : Richardplatz 6 : Neukölln<br> 189) 14.03.2024 : 11<br>176) 10.02.2023 : 18<br>"
+            "name" : "<b>Villa Rixdorf</b> : Richardplatz 6 : Neukölln<br> <span class='y2024'>189) 14.03.2024 : 11<br></span><span class='y2023'>176) 10.02.2023 : 18<br></span>"
          },
          "type" : "Feature"
       },
@@ -390,7 +390,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Weihnachtsmarkt Schloss Charlottenburg</b> : Spandauer Damm : Charlottenburg<br> 186) 15.12.2023 : 5<br>"
+            "name" : "<b>Weihnachtsmarkt Schloss Charlottenburg</b> : Spandauer Damm : Charlottenburg<br> <span class='y2023'>186) 15.12.2023 : 5<br></span>"
          },
          "type" : "Feature"
       },
@@ -404,7 +404,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>WikiBär</b> : Köpenicker Str 45 : Mitte<br> 180) 09.06.2023 : 10 (bekannte OSM-User) + Wikipedianer<br>"
+            "name" : "<b>WikiBär</b> : Köpenicker Str 45 : Mitte<br> <span class='y2023'>180) 09.06.2023 : 10 (bekannte OSM-User) + Wikipedianer<br></span>"
          },
          "type" : "Feature"
       },
@@ -418,7 +418,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Zelig</b> : Friedrich-Ebert-Straße 21 : Cottbus<br> 134) 09.08.2019 : 8<br>"
+            "name" : "<b>Zelig</b> : Friedrich-Ebert-Straße 21 : Cottbus<br> <span class='y2019'>134) 09.08.2019 : 8<br></span>"
          },
          "type" : "Feature"
       },
@@ -432,7 +432,7 @@ geoJsonResponse(
          },
          "properties" : {
             "cat" : "X",
-            "name" : "<b>Zollpackhof</b> : Elisabeth-Abegg-Str. 1 : Tiergarten<br> 172) 14.10.2022 : 4<br>"
+            "name" : "<b>Zollpackhof</b> : Elisabeth-Abegg-Str. 1 : Tiergarten<br> <span class='y2022'>172) 14.10.2022 : 4<br></span>"
          },
          "type" : "Feature"
       }

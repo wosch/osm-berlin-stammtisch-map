@@ -25,3 +25,20 @@ span#homelink {
     z-index: 1000000000;
 }
 
+
+/* fresh loctions */
+span.y2024, span.y2023, span.y2022, span.y2021, span.y2020 {
+    color: #00A36C;
+}
+
+/* more than 3 years old: yellow */
+span.y2020, span.y2019, span.y2018, span.y2017, span.y2016, span.y2015 {
+    color: #FFBF00;
+}
+
+/* more than 10 years old: red */
+span.y2014, span.y2013, span.y2012, span.y2011, span.y2010, span.y2009, span.y2008 {
+    color: #FA8072;
+}
+
+/* EOF */

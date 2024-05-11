@@ -86,8 +86,8 @@ sub location_hash {
             'lon'       => $lon,
             'lat'       => $lat,
             'name'      => $name,
-            'street'    => $street // '',
-            'city'      => $city // '',
+            'street'    => $street   // '',
+            'city'      => $city     // '',
             'homepage'  => $homepage // '',
             'name_norm' => $name_norm
         };
@@ -110,6 +110,14 @@ sub homepage {
     else {
         return qq[<b><a target='_new' href='$url'>$name</a></b>];
     }
+}
+
+sub date_class {
+    my $date = shift;
+    my $text = shift;
+
+    my ($year) = ( $date =~ m,(\d{4})$, );
+    return qq[<span class='y${year}'>$text</span>];
 }
 
 sub geojsonp {
@@ -140,15 +148,13 @@ sub geojsonp {
               . " : "
               . $location->{$name_norm}->{'street'} . " : "
               . $location->{$name_norm}->{'city'} . "<br> "
-              . $number . ") "
-              . $date . " : "
-              . $real_count . "<br>";
+              . &date_class( $date, qq[$number) $date : $real_count<br>] );
         }
 
         # earlier meetings
         else {
             $hash->{$name_norm} .=
-              $number . ") " . $date . " : " . $real_count . "<br>";
+              &date_class( $date, qq[$number) $date : $real_count<br>] );
         }
     }
 
