@@ -437,63 +437,13 @@ function doLeaflet() {
         zoomAnimation: true,
         fadeAnimation: false,
         // animations may be super-slow, seen on mosor/firefox9 - but see https://github.com/Leaflet/Leaflet/issues/1922
-        doubleClickZoom: disable_routing,
         // used for setting start/goal, see below for click/dblclick event
         layers: [bbbikeTileLayer]
     });
 
     var speedControl;
-    if (show_speedometer) {
-        var SpeedoMeter = L.Control.extend({
-            options: {
-                position: 'topleft'
-            },
-
-            onAdd: function(map) {
-                var container = L.DomUtil.create('div', 'my-speedometer');
-                container.innerHTML = "&#8199;&#8199;.&#8199;"; // figure space
-                container.align = 'right';
-                container.style.background = 'white';
-                container.style.padding = '3px';
-                container.style.margin = '10px';
-                container.style.border = '3px black solid ';
-                container.style.borderRadius = '5px';
-                container.style.font = '42px sans-serif';
-                //container.style.width = '2.5em';
-                return container;
-            }
-        });
-        speedControl = new SpeedoMeter();
-        map.addControl(speedControl);
-    }
 
     var clockControl;
-    if (show_speedometer) {
-        var Clock = L.Control.extend({
-            options: {
-                position: 'topright'
-            },
-
-            onAdd: function(map) {
-                var container = L.DomUtil.create('div', 'my-clock');
-                container.innerHTML = '&#8199;&#8199;:&#8199;&#8199;:&#8199;&#8199;';
-                container.align = 'center';
-                container.style.background = 'white';
-                container.style.padding = '3px';
-                container.style.margin = '10px';
-                container.style.border = '3px black solid ';
-                container.style.borderRadius = '5px';
-                container.style.font = '42px sans-serif';
-                window.setInterval(function() {
-                    var now = new Date();
-                    container.innerHTML = sprintf("%02d:%02d:%02d", now.getHours(), now.getMinutes(), now.getSeconds());
-                }, 1000);
-                return container;
-            }
-        });
-        clockControl = new Clock();
-        map.addControl(clockControl);
-    }
 
     map.addControl(new L.control.zoom());
     map.addControl(new L.control.scale());
@@ -654,27 +604,6 @@ function doLeaflet() {
         addLocators();
     }
 
-    if (!disable_routing) {
-        map.on('dblclick', function(e) {
-            if (searchState == "start") {
-                startLatLng = e.latlng;
-
-                if (goalMarker) {
-                    map.removeLayer(goalMarker);
-                }
-                setStartMarker(startLatLng);
-
-                searchState = 'goal';
-            } else if (searchState == "goal") {
-                setGoalMarker(e.latlng);
-
-                searchRoute(startLatLng, e.latlng);
-            } else if (searchState == "searching") {
-                // nop
-            }
-        });
-    }
-
     map.on('moveend', function() {
         var center = map.getCenter();
         q.set('lat', parseFloat(center.lat).toFixed(6));
@@ -741,16 +670,6 @@ function doLeaflet() {
         showRoute(initialRouteGeojson);
         setViewLatLng = L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]);
     } else if (initialGeojson) {
-        if (show_feature_list) { // auto-id numbering
-            var features = initialGeojson.features;
-            if (!features && initialGeojson.type == 'Feature') {
-                features = [initialGeojson];
-            }
-            var id = 0;
-            for (var i = 0; i < features.length; i++) {
-                features[i].properties.id = ++id;
-            }
-        }
         currentLayer = map; // XXX hacky! must be set before creating geoJson layer (which would call onEachFeature callback)
         var l = L.geoJson(initialGeojson, stdGeojsonLayerOptions);
         l.addTo(map);
@@ -784,7 +703,7 @@ function doLeaflet() {
         map.setView(setViewLatLng, setViewZoom);
     }
 
-    if (show_feature_list && initialGeojson) {
+    if (initialGeojson) {
         var listHtml = '';
         var features = initialGeojson.features;
         if (!features && initialGeojson.type == 'Feature') {
@@ -802,44 +721,6 @@ function doLeaflet() {
         }
 
         setFeatureListContent(listHtml);
-    }
-
-    if (replayTrkJson) {
-        // XXX hack, so TrackSegs.lastKmH works XXX
-        enable_upload = true;
-
-        var replayTrkSegIndex = 0;
-        var replayTrkWptIndex = 0;
-        var showNextWpt = function() {
-                var wpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
-                var latlng = L.latLng(Number.parseFloat(wpt.lat), Number.parseFloat(wpt.lng));
-                var thisTime = Number.parseInt(wpt.time);
-                var e = {
-                    "latlng": latlng,
-                    "pos": {
-                        "timestamp": thisTime,
-                        "coords": {
-                            "accuracy": Number.parseFloat(wpt.acc)
-                        }
-                    }
-                };
-                locationFoundOrNot('locationfound', e);
-                replayTrkWptIndex++;
-                if (replayTrkWptIndex >= replayTrkJson.trackSegs[replayTrkSegIndex].length) {
-                    replayTrkSegIndex++;
-                    replayTrkWptIndex = 0;
-                    if (replayTrkSegIndex >= replayTrkJson.trackSegs.length) {
-                        // we're done
-                        return;
-                    }
-                }
-                var nextWpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
-                var nextTime = Number.parseInt(nextWpt.time);
-                window.setTimeout(function() {
-                    showNextWpt()
-                }, nextTime - thisTime);
-            };
-        showNextWpt();
     }
 }
 
