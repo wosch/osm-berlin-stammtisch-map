@@ -2,7 +2,7 @@
 
 all: help
 SCRIPT= ./bin/geojsonp.pl
-FILE=	www/osm-berlin.geojsonp
+FILE=	www/js/osm-berlin.geojsonp
 DOCKER_BUILD_FLAGS?=	--no-cache
 
 update:
